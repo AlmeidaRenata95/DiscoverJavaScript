@@ -18,13 +18,34 @@
         console.log(clima)
 
         // const
-        const clima = "Quente" // const é diferente, não pode mudar o valor durante a aplicação. 
+        const clima = "Quente" // const é diferente, não pode mudar o valor durante a aplicação, o valor que for dado será sempre o mesmo. 
         //clima ="frio"
         console.log(clima)
+        // Tipos Dinâmicos - As variáveis não precisam ter um tipo previamente definido.
+        // exemplo a seguir é dinâmico
+        let clima = true // boolean
+        clima = "" // string
 
+        console.log(typeof clima)
 
-
-
+        //scope - determina a visibilidade de uma variável no JS. 
+        //exemplo:
+        {
+        var x = 0
+        }
+        console.log('> existe x depois do bloco?' , x)
+        //{
+        aqui dentro é um bloco e posso colocar qualquer código 
+        }
+        //
+        //o bloco tabém criará um novo espaço. Chamamos de bloco-scoped
+        // Scope let e const 
+        // exemplo com let 
+        {
+            let y = 0
+            console.log('> existe y', y) // se meu y estiver declarado depois do meu programa "console.log" dará erro. 
+        }
+            console.log('> existe y depois do bloco? ', y)
 
     </script>
 </body>

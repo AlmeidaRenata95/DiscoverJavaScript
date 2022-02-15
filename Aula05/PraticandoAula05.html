@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios e Práticas...</title>
+</head>
+<body>
+    <b>Exercícios</b> 
+        <ul>
+            <li>1. Declare uma variável de nome weight</li>
+            <li>2. Que tipo de dado é a variável acima?</li>
+            <li>3. Declare uma variável e atribua valores para cada um dos dados: </li>
+                <li>Name: String</li>
+                <li>Number "integer"</li>
+                <li>stars: Number (float)</li>
+                <li>isSubscribed: boolean</li>
+            <li>4. A variável student abaixo é de que tipo de dados?</li>
+                <li>4.1 Atribua a ela as mesmas propriedades e valores do exercício 3.</li>
+                <li>4.2 Mostre no console a seguinte mensagem: </li>
+                    <li> <name> de idade <age> pesa <weight> kg</li>
+                <li><b>Atenção! Substitua <name> <age> e <weight> pelos valores de cada propriedade do objeto.</b></li>
+            <li>5. Declare uma variável do tipo array, de nome student e atribua a ela nenhum valor, ou seja, somente o array vazio.</li>
+            <li>6. Reatribua valor para a variável acima, colocando dentro dela o objeto student da questão 4. Não copiar e colar o objeto, mas usar o objeto criado e inserir ele no array.</li>
+            <li>7. Coloque no console o valor da posição zero do Array acima.</li>
+            <li>8. Crie um novo student e coloque na posição 1 do Array students.</li>
+            <li>9. Sem rodar o código responda qual é a resposta dp código abaixo e porque ? Após sua resposta, rode o código e veja se acertou.</li>
+        </ul>
+
+<script>
+    // Exercício 1.
+    let weight
+
+    // Exercício 2.
+    console.log(typeof weight)
+
+    // Exercício 3.
+    let Name = "Renata"
+    let Number = 18
+    let stars = 8.5
+    let isSubscribed = true;    
+
+    // Exercício 4.
+    let student = { //aqui criamos um objeto, sendo preciso o uso das chaves 
+    name: "Renata",
+    age: 18,
+    weight: 74.5,
+    isSubscribed: true,
+    }
+    console.log(`A ${student.name} de idade ${student.age} pesa ${student.weight} kg.`)
+
+    // Exercício 5.
+    let students = []
+
+    // Exercício 6.
+    let students = [ // aqui eu reatribuiu ou nomeei uma nova variável, depois chamei ela dentro do meu array, será mostrarado a posição que o objeto student está 
+        student
+    ]
+    // Exercício 7.
+    console.log(students[0])
+
+    // Exercício 8.
+    const john = {
+        name: "John",
+        age: 18,
+        weight: 82.3,
+        isSubscribed: true,
+    }
+    students = [
+        students, 
+        john,
+    ]
+    console.log([students])
+
+    // Exercício 9.
+    console.log(a)
+    var a = 1
+    // a resposta é a seguinte, a variavel nao foi criada, então acontece o hoisting ou a elevação. o vbalor é undefined
+    </script>
+</body>
+</html>
